@@ -1,8 +1,8 @@
 name:firstworkflow
 on:workflow_dispatch
 jobs:
-  first_job:
+  first-job:
     runs-on:windows-latest
     steps:
       -name:print greeting
-      run:echo "hello"
+       run:echo "hello"
