@@ -1,0 +1,8 @@
+name: sai
+on: workflow_dispatch
+jobs:
+  kiran:
+    runs-on: windows-latest
+    steps:
+      - name: print world
+        run: echo "world"
