@@ -1,0 +1,13 @@
+name: sai
+on: workflow_dispatch
+jobs:
+  kiran:
+    runs-on: windows-latest
+    steps:
+      - name: print world
+        run: echo "world"
+  good:
+    runs-on: windows-latest
+    steps:
+      - name: print king
+        run: print("hello king")
