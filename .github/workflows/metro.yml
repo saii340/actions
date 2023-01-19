@@ -1,0 +1,8 @@
+name: lastworkflow
+on: workflow_dispatch
+jobs:
+  paytm:
+    runs-on: windows-latest
+    steps:
+      - name: metro_tickets
+      - run: echo "hyderabad"
