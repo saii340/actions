@@ -1,7 +1,3 @@
-FROM node:10-alpine
-WORKDIR /usr/src/app
-COPY package*.json ./
-RUN npm install
-COPY . .
-EXPOSE 3000
-CMD ["npm", "start"]
+FROM httpd:2.4
+# LABEL AUTHOR=user@example.com
+LABEL VERSION=0.1
