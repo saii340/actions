@@ -1,0 +1,18 @@
+name: pushing docker image
+on: workflow_dispatch
+jobs:
+  java:
+    runs-on: windows-latest
+    steps:
+      - name: creating a file
+        run: touch "Dockerfile"
+      - name: inserting
+        run : vim "Dockerfile"
+      - name: inserting values
+        run : echo "docker image"
+      - uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+         image: sai340/python/imagepython
+         registry: docker.io
+         username: sai340
+         password: Saikiran@340
