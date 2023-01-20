@@ -1,0 +1,17 @@
+name: normal_flow
+on: workflow_dispatch
+jobs:
+  phonepay:
+    runs-on: windows-latest
+    steps:
+      - name: creating a file
+        run: touch "file1"
+      - name: creating a second file
+        run: touch "file2"
+  gpay:
+    runs-on: windows-latest
+    steps:
+      - name: creating a directory
+        run: mkdir "d"
+      - name: creating a directory 2
+        run: mkdir "d2"
