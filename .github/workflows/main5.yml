@@ -1,0 +1,13 @@
+name: pushing image to docker hub
+on: workflow_dispatch
+jobs:
+  azure:
+    runs-on: windows-latest
+    steps:
+      - name: pushing image
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          image: sai340/python/aws
+          registry: docker.io
+          username: sai340
+          password: Saikiran@340
