@@ -1,11 +1,11 @@
-name: pushing image to docker hub 3
+name: pushing image to docker hub 2
 on: workflow_dispatch
 jobs:
-  gcp1:
+  gcp2:
     runs-on: windows-latest
     steps:
       - name: creating a file
-        run: touch "docker file"
+        run: touch "Dockerfile"
       - name: pushing image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
